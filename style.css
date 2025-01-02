@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-size: 0.938rem;
+
+    --fw-light: 200;
+    --fw-mid: 400;
+    --fw-bold: 600;
+
+    --ff-main: 'Poppins';
+
+    /* Colors */
+    --clr-primary-red: hsl(0, 78%, 62%);
+    --clr-primary-cyan: hsl(180, 62%, 55%);
+    --clr-primary-orange: hsl(34, 97%, 64%);
+    --clr-primary-blue:  hsl(212, 86%, 64%);
+
+    --clr-neutral-darkblue: hsl(234, 12%, 34%);
+    --clr-neutral-grayishblue:  hsl(229, 6%, 66%);
+    --clr-neutral-lightgrey:  hsl(0, 0%, 98%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+html, body {
+    height: 100%;
+    background-color: var(--clr-neutral-lightgrey);
+    margin: .5rem;
+    margin-top: 2.5rem;
+    font-size: var(--font-size);
+    font-family: var(--ff-main);
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-light);
+    letter-spacing: 1px;
+    color: var(--clr-neutral-darkblue);
+}
+h2 {
+    color: var(--clr-neutral-darkblue);
+    font-size: 1.54rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+h3,h4,h5,h6 {
+    color: var(--clr-neutral-darkblue);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+}
+.website__title-description {
+    color: var(--clr-neutral-grayishblue);
+    font-size: 1rem;
+    margin: 0.8rem;
+    margin-bottom: 4rem;
+    font-weight: var(--fw-mid);
+}
+p {
+    color: var(--clr-neutral-grayishblue);
+    font-size: 1rem;
+    font-weight: var(--fw-mid);
+}
+section {
+    display: grid;
+    justify-items: center;
+}
+article {
+    text-align: start;
+    background-color: white;
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: .375rem;
+    max-width: 320px;
+    box-shadow: 0px 6px 10px rgba(70, 70, 124, 0.329);
+}
+img {
+    padding: 1rem;
+    position: relative;
+    left: 10rem;
+    top: 1rem;
+}
+.card-1 {
+    border-top: 4px solid var(--clr-primary-cyan);
+}
+.card-2 {
+    border-top: 4px solid var(--clr-primary-red);
+}
+.card-3 {
+    border-top: 4px solid var(--clr-primary-orange);
+}
+.card-4 {
+    border-top: 4px solid var(--clr-primary-blue);
+}
+.website__conatiner {
+   text-align: center;
+}
